@@ -52,25 +52,13 @@ button:hover{
     font-weight: bold;
 }
 
-.inicio:hover{
-    color:  rgb(246, 211, 96);
-    font-weight: bold;
-    cursor: pointer;
+a{
+    text-decoration: none;
+    color: white;
 }
 
-.sobre:hover{
-    color:  rgb(246, 211, 96);
-    font-weight: bold;
-    cursor: pointer;
-}
 
-.conta-pf:hover{
-    color:  rgb(246, 211, 96);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.conta-pj:hover{
+h4:hover{
     color: rgb(246, 211, 96);
     font-weight: bold;
     cursor: pointer;
@@ -118,9 +106,7 @@ p{
     grid-row: 5px;
     align-items: center;
     justify-items: center;
-    
-   
-    
+ 
 }
 
 
@@ -205,11 +191,23 @@ footer{
     align-items: center;
     background-color: rgb(250, 179, 98);
     height: 90px;
-    
-   
+
 }
 
-.redes-sociais > img{
-   padding-bottom: 10px;
+#facebook{
     width: 30px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+}
+
+#twitter{
+    width: 30px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+}
+
+#instagram{
+    width: 30px;
+    padding-bottom: 12px;
+    padding-left: 5px;
 }

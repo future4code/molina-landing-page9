@@ -53,30 +53,6 @@ button:hover{
     font-weight: bold;
 }
 
-.inicio:hover{
-    color:  rgb(246, 211, 96);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.sobre:hover{
-    color:  rgb(246, 211, 96);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.conta-pf:hover{
-    color:  rgb(246, 211, 96);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.conta-pj:hover{
-    color: rgb(246, 211, 96);
-    font-weight: bold;
-    cursor: pointer;
-}
-
 a{
     text-decoration: none;
     color: white;
@@ -129,28 +105,32 @@ p{
     align-items: center;
     justify-content: center;
     justify-items: center;
-    
-
 }
 
 .grid-container{
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+
     align-items: center;
     justify-content: center;
     justify-items: center;
     
-    width: 80rem;
-    height: 30rem;
-    background-color: rgb(233, 226, 202);
+    width: 95rem;
+    height: 20rem;
+    background-color: rgb(255, 255, 255);
+   
     
-    box-shadow: 2px 2px 5px darkgray;
+    box-shadow: 5px 5px 8px darkgray;
     margin-top: 50px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    gap: 20px;
-    align-self:center
     
+    align-self:center;
+    background-image: url("https://image.freepik.com/free-vector/blue-orange-financial-items_1284-1146.jpg");
     
+    /* background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/678890-padrao-geometrico-abstrato-colorido-memphis-vetor.jpg"); */
+   
+   
 }
 
 .container2{
@@ -164,29 +144,40 @@ p{
    display:flex; 
     width: 20rem;
     height: 25rem;
-    background-color: rgb(246, 211, 96);
+    background-color: rgb(233, 177, 150);
     border-radius: 20px;
     box-shadow: 2px 2px 5px darkgray; 
+
     align-items: center;
     justify-content: center;
     justify-items: center;
     flex-direction: column;
-    padding: 40px;
 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
 }
 
 .bloco2{
     display:flex; 
     width: 20rem;
     height: 25rem;
-    background-color: rgb(246, 211, 96);
+    background-color: rgb(250, 180, 123);
     border-radius: 20px;
     box-shadow: 2px 2px 5px darkgray;
+
     align-items: center;
     justify-content: center;
     justify-items: center;
     flex-direction: column;
-    padding: 40px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+   
 
 }
 
@@ -194,25 +185,41 @@ p{
     display:flex; 
     width: 20rem;
     height: 25rem;
-    background-color: rgb(246, 211, 96);
+    background-color: rgb(241, 218, 114);
     border-radius: 20px;
     box-shadow: 2px 2px 5px darkgray;
+
     align-items: center;
     justify-content: center;
     justify-items: center;
     flex-direction: column;
-    padding: 40px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+   
 }
 
 h3{
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
+
 
 h4{
    text-align: center;
 }
 
+h5{
+   
+    padding-bottom: 30px;
+    font-size: 13px;
+    text-align: justify;
+}
 
+/*rodapé*/
 
 footer{
     display: flex;
@@ -221,34 +228,128 @@ footer{
     align-items: center;
     background-color: rgb(250, 179, 98);
     height: 90px;
-    
-   
-}
-
-.redes-sociais > img{
-   padding-bottom: 10px;
-    width: 30px;
-}
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(250, 179, 98);
-    height: 90px;
-    
-   
 }
 
 #facebook{
-    width: 30px;
+    width: 33px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+    
+}
+
+#twitter{
+    width: 33px;
     padding-bottom: 12px;
     padding-left: 5px;
 }
 
-#twitter{
+#instagram{
     width: 30px;
-    padding-bottom: 12px;
+    padding-bottom: 13px;
     padding-left: 5px;
 }
+
+/*Responsividade*/
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+    
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 10px;
+        font-weight: bold;
+        height: 60px;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+
+    .menu > img{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 40px;
+        height: 40px;
+    }
+    
+
+    .button{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-between;
+        width: 40px;
+        height: 50px;
+
+    }
+
+    main{
+        height: 2000px
+    }
+
+    .texto-1{
+
+        width: 375px;
+        height: 250px;
+    }
+
+ 
+    .texto-2{
+        width: 350px;
+    }
+
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-content: left;
+        align-content: stretch;
+        height: 1000px;
+        width: 375px;
+        
+    }
+
+    h5{
+        font-size: 15px;
+    }
+
+.container2{
+    height: 10px;
+}
+    
+
+footer{
+
+    display:flex;
+    justify-items: flex-end;
+    width: 375px;
+
+}
+
+rodape{
+    display:flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    
+    
+}
+
+
+/*    
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+    /* tablets */
+    }
+@media screen and (min-device-width : 1200px) {
+    /* computadores */
+    } */
+
+
+    
