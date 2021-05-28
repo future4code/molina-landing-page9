@@ -208,3 +208,25 @@ footer{
     padding-bottom: 12px;
     padding-left: 5px;
 }
+
+
+/*responsividade*/
+@media screen and (min-device-width: 320px) and (max-device-width:488px) {
+    header{
+        width: 300vw;
+    }
+
+    main{
+        width: 300vw;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 250px);
+    }
+    
+    footer{
+        width: 300vw;
+        height: 50px;
+    }
+}
