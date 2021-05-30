@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     
@@ -14,7 +15,9 @@ header {
     display: flex;
     background-color: rgb(245, 145, 78);
     justify-content: space-between;
-    color:white
+    color:white;
+   padding-right: 20px;
+    
 }
 
 .menu{
@@ -23,7 +26,7 @@ header {
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
-    column-gap: 80px;
+    column-gap: 90px;
     font-weight: bold;
 }
 
@@ -41,16 +44,25 @@ button{
     border-radius: 20px;
     height: 30px;
     width: 200px;
-    align-self: center;
-    margin-right: 20px;
     cursor: pointer;
     font-weight: bold;
+    
+}
+
+a{
+    display: flex;
+    align-self: center;
+    align-items: flex-end
 }
 
 button:hover{
     background-color:  rgb(246, 211, 96);
     color: white;
     font-weight: bold;
+}
+
+h6{
+    font-size: 90%;
 }
 
 a{
@@ -230,6 +242,11 @@ footer{
     height: 90px;
 }
 
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+}
+
 #facebook{
     width: 33px;
     padding-bottom: 12px;
@@ -245,7 +262,7 @@ footer{
 
 #instagram{
     width: 30px;
-    padding-bottom: 13px;
+    padding-bottom: 11px;
     padding-left: 5px;
 }
 
@@ -254,8 +271,14 @@ footer{
 
 @media screen and (min-device-width: 320px) and (max-device-width: 480px){
     
-    main{
-        height: 1780px
+    /*cabeçalho*/
+
+    header {
+        display: flex;
+        background-color: rgb(245, 145, 78);
+        color:white;
+        justify-content: space-evenly;
+        
     }
 
     .menu{
@@ -264,22 +287,25 @@ footer{
         grid-template-rows: 1fr;
         align-items: center;
         justify-items: center;
-        column-gap: 10px;
+        column-gap: 5px;
         font-weight: bold;
         height: 60px;
+        width: 100%;
+        
     }
 
      .menu > img{
         display: flex;
         align-items: center;
         flex-direction: column;
-        width: 40px;
+        width: 50px;
         height: 50px;
     }
 
     h4{
-        font-size: 12px;
+        font-size: 80%;
     }
+
     a{
         text-decoration: none;
         color: white;
@@ -296,28 +322,46 @@ footer{
         display: flex;
         align-items: right;
         justify-items: right;
-        justify-content: space-between;
-        width: 40px;
-        height: 60px;
     }
 
+    
+    a{
+        align-self: center;
+        justify-content: center;
+        width: 55px;
+        height: 100%;
+    }
+
+
+    h6{
+
+        font-size: 70%;
+    }
 
     button:hover{
         background-color:  rgb(246, 211, 96);
         color: white;
         font-weight: bold;
     }
-    
+
+
+     /*corpo*/
+
+     main{
+        width: 100%;
+        height: 100%;
+      
+    }
     
     .texto-1{
 
-        width: 375px;
-        height: 200px;
+        width: 100%;
+        height: 250px;
+        
     }
-
- 
+   
     .texto-2{
-        width: 350px;
+        width: 85%;
     }
 
 
@@ -325,46 +369,421 @@ footer{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        justify-content: left;
-        align-content: stretch;
-        height: 1000px;
-        width: 375px;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    h5{
+        font-size: 17px;
         
     }
 
+    .container2{
+        height: 100px;
+    }
+        
+
+    /*rodapé*/
+
+    footer{
+    
+        display:flex;
+        justify-items: flex-end;
+        width: 100%;
+    
+    }
+    
+    .rodape{
+        display:flex;
+        justify-content: flex-end;
+        justify-items: flex-end;
+    
+    }
+
+    #instagram{
+        width: 30px;
+        padding-bottom: 13px;
+        padding-left: 5px;
+    }
+}     
+
+
+ @media screen and (min-device-width : 481px) and (max-device-width : 1204px) {
+
+
+    /*cabeçalho*/
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 10px;
+        font-weight: bold;
+        height: 60px;
+        width: 100%;
+    }
+
+    .menu > img{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+    }
+
+    h4{
+        font-size: 90%;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    h4:hover{
+        color: rgb(246, 211, 96);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .button{
+        display: flex;
+        align-items: right;
+        justify-items: right;
+        justify-content: space-between;
+        width: 90%;
+        height: 100px;
+    }
+
+    h6{
+
+        font-size: 90%;
+    }
+
+    button:hover{
+        background-color:  rgb(246, 211, 96);
+        color: white;
+        font-weight: bold;
+    }
+
+
+    /*corpo*/
+
+    main{
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .texto-1{
+
+        width: 100%;
+        height: 250px;
+        
+    }
+
+    .texto-2{
+        width: 85%;
+    }
+
+
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+
     h5{
-        font-size: 15px;
+        font-size: 90%;
+        
     }
 
-.container2{
-    height: 10px;
-}
-    
-
-footer{
-
-    display:flex;
-    justify-items: flex-end;
-    width: 375px;
-
-}
-
-rodape{
-    display:flex;
-    justify-content: flex-end;
-    justify-items: flex-end;
-    
-    
-}
-
-
-/*    
-@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
-    /* tablets */
+    .container2{
+        height: 100px;
     }
-@media screen and (min-device-width : 1200px) {
-    /* computadores */
-    } */
-
-
+        
     
+    h3{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    
+    
+    /*rodapé*/
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(250, 179, 98);
+        height: 90px;
+        width: 100%;
+    }
+    
+    #facebook{
+        width: 33px;
+        padding-bottom: 12px;
+        padding-left: 5px;
+        
+    }
+    
+    #twitter{
+        width: 33px;
+        padding-bottom: 12px;
+        padding-left: 5px;
+    }
+    
+    #instagram{
+        width: 30px;
+        padding-bottom: 13px;
+        padding-left: 5px;
+    }
+
+}
+
+@media screen and (min-device-width : 1280px) and (max-device-width : 1520px) {
+
+/*cabeçalho*/
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 10px;
+        font-weight: bold;
+        height: 60px;
+        width: 100%;
+    }
+
+    .menu > img{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+    }
+
+    h4{
+        font-size: 90%;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    h4:hover{
+        color: rgb(246, 211, 96);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .button{
+        display: flex;
+        align-items: right;
+        justify-items: right;
+        justify-content: space-between;
+        width: 90%;
+        height: 100px;
+    }
+
+    h6{
+
+        font-size: 90%;
+    }
+
+    button:hover{
+        background-color:  rgb(246, 211, 96);
+        color: white;
+        font-weight: bold;
+    }
+
+    /*corpo*/
+
+    main{
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .texto-1{
+
+        width: 100%;
+        height: 450px;
+        
+    }
+
+    .texto-2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+
+    p{
+        margin-top: 10px;
+        text-align: center;
+        
+    }
+
+    .container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 20px;
+
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        
+        width: 100%;
+        height: 80%;
+        background-color: rgb(255, 255, 255);
+    
+        
+        box-shadow: 5px 5px 8px darkgray;
+        margin-top: 50px;
+        
+        align-self:center;
+        background-image: url("https://image.freepik.com/free-vector/blue-orange-financial-items_1284-1146.jpg");
+    
+    }
+
+    .bloco1{
+        display:flex; 
+        width: 60%;
+        height: 115%;
+        background-color: rgb(233, 177, 150);
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px darkgray; 
+
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        
+    }
+
+    .bloco2{
+        display:flex; 
+        width: 60%;
+        height: 115%;
+        background-color: rgb(250, 180, 123);
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px darkgray;
+
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    
+
+    }
+
+    .bloco3{
+        display:flex; 
+        width: 60%;
+        height: 115%;
+        background-color: rgb(241, 218, 114);
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px darkgray;
+
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    
+    }
+
+    h3{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+
+    h4{
+    text-align: center;
+    }
+
+    h5{
+    
+        padding-bottom: 30px;
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .container2{
+        display: flex;
+        height: 100px;
+        background-color: white;
+
+    }
+
+    /*rodapé*/
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(250, 179, 98);
+        height: 90px;;
+        width: 100%;
+    }
+
+    #facebook{
+        width: 33px;
+        padding-bottom: 12px;
+        padding-left: 5px;
+        
+    }
+
+    #twitter{
+        width: 33px;
+        padding-bottom: 12px;
+        padding-left: 5px;
+    }
+
+    #instagram{
+        width: 30px;
+        padding-bottom: 13px;
+        padding-left: 5px;
+    }
+
+}
