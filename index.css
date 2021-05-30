@@ -11,8 +11,21 @@ body {
 /*Cabeçalho*/
 header {
     display: flex;
-    background-color: rgb(250, 179, 98);
+    background-color: rgb(245, 145, 78);
     justify-content: space-between;
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+h4:hover{
+    color: rgb(246, 211, 96);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .menu{
@@ -21,22 +34,23 @@ header {
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
-    column-gap: 10px;
+    column-gap: 80px;
     font-weight: bold;
 }
-
 .menu > img{
     border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-right: 40px;
+    width: 85px;
+    height: 70px;
+    margin-left: 20px;
 
 }
 
 button{
+    background-color: white;
+    border-color: white;
     border-radius: 20px;
     height: 30px;
-    width: 170px;
+    width: 200px;
     align-self: center;
     margin-right: 20px;
     cursor: pointer;
@@ -44,31 +58,15 @@ button{
 }
 
 button:hover{
-    background-color: rgb(246, 236, 96);
+    background-color:  rgb(246, 211, 96);
     color: white;
     font-weight: bold;
-}
-
-.inicio{
-    cursor: pointer;
-}
-
-.sobre{
-    cursor: pointer;
-}
-
-.conta-pf{
-    cursor: pointer;
-}
-
-.conta-pj{
-    cursor: pointer;
 }
 
 /*main*/
 
 .texto-1{
-    background-image: url(img/mulher-jovem-feliz-europeia-vestindo-roupas-laranja-levanta-o-dedo-mostra-como-o-polegar-para-cima-sobre-amarelo-menina-expressando-positivo-tem-olhar-satisfeito_176532-13458.jpg);
+    background-image: url(img/pessoaslaranja.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -83,6 +81,152 @@ button:hover{
 h2{
     align-items: center;
     justify-items: center;
+}
+
+.texto-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p{
+    margin-top: 10px;
+    text-align: center;
     
+}
+.grid-container{
+    display: grid;
+    height: 40rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row: 5px;
+    align-items: center;
+    justify-items: center;
     
+   
+    
+}
+
+
+.cartao{
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(246, 236, 96);
+    border-radius: 20px;
+    width: 380px;
+    height: 220px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cartao > img{
+    
+    width: 80px;
+}
+.saque{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(246, 211, 96);
+    border-radius: 20px;
+    width: 380px;
+    height: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+   
+}
+.saque > img{
+    margin-top: 15px;
+    padding-bottom: 15px ;
+    width: 80px;
+}
+.atendimento{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(246, 186, 96);
+    border-radius: 20px;
+    width: 380px;
+    height: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+.atendimento > img{
+    margin-top: 30px;
+    width: 80px;
+}
+
+.pontos{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(246, 156, 96);
+    border-radius: 20px;
+    width: 380px;
+    height: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pontos > img{
+    width: 100px;
+}
+h3{
+    text-align: center;
+}
+
+
+    
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 179, 98);
+    height: 90px;
+    
+   
+}
+
+#facebook{
+    width: 30px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+}
+
+#twitter{
+    width: 30px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+}
+
+
+#instagram {
+    width: 28px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+}
+
+
+/*responsividade*/
+@media screen and (min-device-width: 320px) and (max-device-width:488px) {
+    header{
+        width: 300vw;
+    }
+
+    main{
+        width: 300vw;
+    }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 250px);
+    }
+    
+    footer{
+        width: 300vw;
+        height: 50px;
+    }
 }
