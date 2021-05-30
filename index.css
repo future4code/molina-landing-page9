@@ -9,10 +9,12 @@ body {
 }
 
 /*Cabeçalho*/
+
 header {
     display: flex;
-    background-color: rgb(250, 179, 98);
+    background-color: rgb(245, 145, 78);
     justify-content: space-between;
+    color:white
 }
 
 .menu{
@@ -21,54 +23,57 @@ header {
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
-    column-gap: 10px;
+    column-gap: 80px;
     font-weight: bold;
 }
 
 .menu > img{
     border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-right: 40px;
+    width: 85px;
+    height: 70px;
+   
 
 }
 
 button{
+    background-color: white;
+    border-color: white;
     border-radius: 20px;
     height: 30px;
-    width: 170px;
-    align-self: center;
-    margin-right: 20px;
+    width: 200px;
     cursor: pointer;
     font-weight: bold;
+    
+}
+
+a{
+    display: flex;
+    align-self: center;
+    align-items: flex-end
 }
 
 button:hover{
-    background-color: rgb(246, 236, 96);
+    background-color:  rgb(246, 211, 96);
     color: white;
     font-weight: bold;
 }
 
-.inicio{
-    cursor: pointer;
+a{
+    text-decoration: none;
+    color: white;
 }
 
-.sobre{
-    cursor: pointer;
-}
 
-.conta-pf{
-    cursor: pointer;
-}
-
-.conta-pj{
+h4:hover{
+    color: rgb(246, 211, 96);
+    font-weight: bold;
     cursor: pointer;
 }
 
 /*main*/
 
 .texto-1{
-    background-image: url(img/mulher-jovem-feliz-europeia-vestindo-roupas-laranja-levanta-o-dedo-mostra-como-o-polegar-para-cima-sobre-amarelo-menina-expressando-positivo-tem-olhar-satisfeito_176532-13458.jpg);
+    background-image: url(img/pessoaslaranja.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -83,6 +88,755 @@ button:hover{
 h2{
     align-items: center;
     justify-items: center;
+}
+
+.texto-2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+p{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+
+.grid-container{
+    display: grid;
+    height: 40rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row: 5px;
+    align-items: center;
+    justify-items: center;
+ 
+}
+
+
+.cartao{
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(246, 236, 96);
+    border-radius: 20px;
+    width: 380px;
+    height: 220px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cartao > img{
+    
+    width: 80px;
+}
+
+.saque{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(246, 211, 96);
+    border-radius: 20px;
+    width: 380px;
+    height: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+   
+}
+.saque > img{
+    margin-top: 15px;
+    padding-bottom: 15px ;
+    width: 80px;
+}
+
+.atendimento{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(246, 186, 96);
+    border-radius: 20px;
+    width: 380px;
+    height: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+.atendimento > img{
+    margin-top: 30px;
+    width: 80px;
+}
+
+.pontos{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(246, 156, 96);
+    border-radius: 20px;
+    width: 380px;
+    height: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pontos > img{
+    width: 100px;
+}
+
+
+h3{
+    text-align: center;
+}
+
+
+    
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 179, 98);
+    height: 90px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+}
+
+#facebook{
+    width: 33px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+    
+}
+
+#twitter{
+    width: 33px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+}
+
+#instagram{
+    width: 30px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+}
+
+/*Responsividade*/
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+    
+    /*cabeçalho*/
+
+    header {
+        display: flex;
+        background-color: rgb(245, 145, 78);
+        color:white;
+        justify-content: space-evenly;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 8px;
+        font-weight: bold;
+        height: 60px;
+        
+    }
+
+     .menu > img{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+    }
+
+    h4{
+        font-size: 80%;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
     
     
+    h4:hover{
+        color: rgb(246, 211, 96);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+  .button{
+        display: flex;
+        align-items: right;
+        justify-items: right;
+    }
+
+    
+    a{
+        align-self: center;
+        justify-content: center;
+        width: 54px;
+        height: 100%;
+    }
+
+
+    h6{
+
+        font-size: 70%;
+    }
+
+    button:hover{
+        background-color:  rgb(246, 211, 96);
+        color: white;
+        font-weight: bold;
+    }
+
+
+     /*corpo*/
+
+     main{
+        max-width: 100%;
+        height: 100%;
+      
+    }
+    
+    .texto-1{
+
+        width: 100%;
+        height: 250px;
+        
+    }
+
+   
+    h2{
+        font-size: 90%;
+    }
+
+    p{
+        font-size: 80%;
+        padding-bottom: 40px;
+    }
+    
+
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr) ;
+        row-gap: 10px;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .cartao{
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(246, 236, 96);
+        border-radius: 20px;
+        width: 90%;
+       
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .cartao > img{
+        
+        width: 80px;
+    }
+    
+    .saque{
+        text-align: center;
+        align-items: center;
+        background-color: rgb(246, 211, 96);
+        border-radius: 20px;
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+       
+    }
+    .saque > img{
+        margin-top: 15px;
+        padding-bottom: 15px ;
+        width: 80px;
+    }
+    
+    .atendimento{
+        align-items: center;
+        text-align: center;
+        background-color: rgb(246, 186, 96);
+        border-radius: 20px;
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
+    .atendimento > img{
+        margin-top: 30px;
+        width: 80px;
+    }
+    
+    .pontos{
+        align-items: center;
+        text-align: center;
+        background-color: rgb(246, 156, 96);
+        border-radius: 20px;
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .pontos > img{
+        width: 100px;
+    }
+    
+    
+    h3{
+        text-align: center;
+        font-size: 90%;
+    }
+
+    /*rodapé*/
+
+    footer{
+    
+        display:flex;
+        justify-items: flex-end;
+        width: 100%;
+    
+    }
+    
+    .rodape{
+        display:flex;
+        justify-content: flex-end;
+        justify-items: flex-end;
+    
+    }
+
+    .redes-sociais{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #instagram{
+        width: 30px;
+        padding-bottom: 13px;
+        padding-left: 5px;
+    }
+}     
+
+
+ @media screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+
+
+    /*cabeçalho*/
+
+
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        /* display: flex;
+        flex-direction: row; */
+        align-items: center;
+        justify-items: center;
+        column-gap: 9%;
+        font-weight: bold;
+        height: 100%;
+        
+    }
+
+     .menu > img{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+    }
+
+    h4{
+        font-size: 70%;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    h4:hover{
+        color: rgb(246, 211, 96);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .button{
+        display: flex;
+        align-items: right;
+        justify-items: right;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+    }
+
+    h6{
+
+        font-size: 70%;
+    }
+
+    button:hover{
+        background-color:  rgb(246, 211, 96);
+        color: white;
+        font-weight: bold;
+    }
+
+
+     /*corpo*/
+
+     main{
+        max-width: 100%;
+        height: 100%;
+      
+    }
+    
+    .texto-1{
+
+        width: 100%;
+        height: 250px;
+        
+    }
+
+   
+    h2{
+        font-size: 90%;
+    }
+
+    p{
+        font-size: 80%;
+        padding-bottom: 40px;
+    }
+    
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr) ;
+        row-gap: 10px;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .cartao{
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(246, 236, 96);
+        border-radius: 20px;
+        width: 90%;
+       
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .cartao > img{
+        
+        width: 80px;
+    }
+    
+    .saque{
+        text-align: center;
+        align-items: center;
+        background-color: rgb(246, 211, 96);
+        border-radius: 20px;
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+       
+    }
+    .saque > img{
+        margin-top: 15px;
+        padding-bottom: 15px ;
+        width: 80px;
+    }
+    
+    .atendimento{
+        align-items: center;
+        text-align: center;
+        background-color: rgb(246, 186, 96);
+        border-radius: 20px;
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
+    .atendimento > img{
+        margin-top: 30px;
+        width: 80px;
+    }
+    
+    .pontos{
+        align-items: center;
+        text-align: center;
+        background-color: rgb(246, 156, 96);
+        border-radius: 20px;
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .pontos > img{
+        width: 100px;
+    }
+    
+    
+    h3{
+        text-align: center;
+        font-size: 90%;
+    }
+
+    /*rodapé*/
+
+    footer{
+    
+        display:flex;
+        justify-items: flex-end;
+        width: 100%;
+    
+    }
+    
+    .rodape{
+        display:flex;
+        justify-content: flex-end;
+        justify-items: flex-end;
+    
+    }
+}
+
+@media screen and (min-device-width : 1280px) and (max-device-width : 1600px) {
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /*Cabeçalho*/
+    header {
+        display: flex;
+        background-color: rgb(245, 145, 78);
+        justify-content: space-between;
+        color:white
+    }
+    
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 80px;
+        font-weight: bold;
+    }
+    
+    .menu > img{
+        border-radius: 50px;
+        width: 85px;
+        height: 70px;
+        margin-left: 20px;
+    
+    }
+    
+    button{
+        background-color: white;
+        border-color: white;
+        border-radius: 20px;
+        height: 30px;
+        width: 200px;
+        align-self: center;
+        margin-right: 20px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    button:hover{
+        background-color:  rgb(246, 211, 96);
+        color: white;
+        font-weight: bold;
+    }
+
+    h6{
+        font-size: 90%
+    }
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    h4:hover{
+        color: rgb(246, 211, 96);
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    /*main*/
+    
+    .texto-1{
+        background-image: url(img/pessoaslaranja.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        color: white;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    h2{
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .texto-2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    p{
+        margin-top: 10px;
+        text-align: center;
+        
+    }
+
+    h3{
+        text-align: center;
+        font-size: 100%;
+    }
+    
+    
+    .grid-container{
+        display: grid;
+        height: 40rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row: 2%;
+        grid-column: 1%;
+        align-items: center;
+        justify-items: center;
+     
+    }
+    
+    
+    .cartao{
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(246, 236, 96);
+        border-radius: 20px;
+        width: 60%;
+        height: 80%;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .cartao > img{
+        
+        width: 80px;
+    }
+    
+    .saque{
+        text-align: center;
+        align-items: center;
+        background-color: rgb(246, 211, 96);
+        border-radius: 20px;
+        width: 60%;
+        height: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+       
+    }
+    .saque > img{
+        margin-top: 15px;
+        padding-bottom: 15px ;
+        width: 80px;
+    }
+    
+    .atendimento{
+        align-items: center;
+        text-align: center;
+        background-color: rgb(246, 186, 96);
+        border-radius: 20px;
+        width: 60%;
+        height: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
+    .atendimento > img{
+        margin-top: 30px;
+        width: 80px;
+    }
+    
+    .pontos{
+        align-items: center;
+        text-align: center;
+        background-color: rgb(246, 156, 96);
+        border-radius: 20px;
+        width: 60%;
+        height: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .pontos > img{
+        width: 100px;
+    }
+    
+        
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(250, 179, 98);
+        height: 90px;
+    }
+    
+    #facebook{
+        width: 33px;
+        padding-bottom: 12px;
+        padding-left: 5px;
+        
+    }
+    
+    #twitter{
+        width: 33px;
+        padding-bottom: 12px;
+        padding-left: 5px;
+    }
+    
+    #instagram{
+        width: 30px;
+        padding-bottom: 13px;
+        padding-left: 5px;
+    }
 }
