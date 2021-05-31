@@ -14,7 +14,19 @@ header {
     display: flex;
     background-color: rgb(245, 145, 78);
     justify-content: space-between;
-    color:white
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+h4:hover{
+    color: rgb(246, 211, 96);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .menu{
@@ -26,12 +38,11 @@ header {
     column-gap: 80px;
     font-weight: bold;
 }
-
 .menu > img{
     border-radius: 50px;
     width: 85px;
     height: 70px;
-   
+    margin-left: 20px;
 
 }
 
@@ -41,6 +52,8 @@ button{
     border-radius: 20px;
     height: 30px;
     width: 200px;
+    align-self: center;
+    margin-right: 20px;
     cursor: pointer;
     font-weight: bold;
     
@@ -273,10 +286,11 @@ footer{
         cursor: pointer;
     }
 
-  .button{
+    .button{
         display: flex;
         align-items: right;
         justify-items: right;
+        
     }
 
     
